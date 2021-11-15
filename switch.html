@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>switch JavaScrip</title>
+</head>
+<body>
+
+    <script type=text/javascript">
+    function obtener() {
+        var pro = document.getElementById("productos").value;
+    switch (pro){
+        case "agua":
+            alert("el precio del "+pro+ "es Q500");
+            break;
+            case "cerveza":
+            alert("el precio del "+pro+ "es Q25");
+            break;
+            case "jugos":
+            alert("el precio del "+pro+ "es Q9.00");
+            break;
+    }  
+    }
+ 
+
+    </script>
+<select id="productos">
+    <option>agua</option>
+    <option>cerveza</option>
+    <option>jugos</option>
+</select>
+<input type="button" value="Obtener" onclick="obtener();">
+</body>
+
+</html>
